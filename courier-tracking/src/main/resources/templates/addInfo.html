@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Courier Info</title>
+</head>
+<body>
+<form th:action="@{/info}" th:object="${infoAddForm}" th:method="post">
+    <table>
+        <tr>
+            <td>Latitude:</td>
+            <td><input type="text" th:field="*{latitude}"/></td>
+        </tr>
+        <tr>
+            <td>Longitude:</td>
+            <td><input type="text" th:field="*{longitude}"/></td>
+        </tr>
+        <tr>
+            <td>Courier Id:</td>
+            <td><input type="number" th:field="*{courierId}"/></td>
+        </tr>
+        <tr>
+            <td>Time:</td>
+            <td><input type="datetime-local" th:field="*{time}"/></td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Add</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

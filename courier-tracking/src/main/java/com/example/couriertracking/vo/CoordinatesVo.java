@@ -12,6 +12,36 @@ public class CoordinatesVo {
         this.totalDistance = totalDistance;
     }
 
+    public static class Builder {
+
+        private Double latitude;
+        private Double longitude;
+        private double totalDistance;
+
+        public Builder latitude(Double latitude) {
+            this.latitude = latitude;
+            return this;
+        }
+        public Builder longitude(Double longitude) {
+            this.longitude = longitude;
+            return this;
+        }
+        public Builder totalDistance(double totalDistance) {
+            this.totalDistance = totalDistance;
+            return this;
+        }
+
+        public CoordinatesVo build() {
+            return new CoordinatesVo(this);
+        }
+    }
+
+        private CoordinatesVo(Builder builder) {
+        latitude = builder.latitude;
+        longitude = builder.longitude;
+        totalDistance = builder.totalDistance;
+    }
+
     public Double getLatitude() {
         return latitude;
     }

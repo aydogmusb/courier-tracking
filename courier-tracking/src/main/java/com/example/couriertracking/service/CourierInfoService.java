@@ -28,13 +28,19 @@ public class CourierInfoService {
             double distance = Math.sqrt((longitude - voLongitude * (longitude - voLongitude)) + ((latitude - voLatitude)) * (latitude - voLatitude));
             double totalDistance = Double.sum(distance, coordinatesVo.getTotalDistance());
 
-            CoordinatesVo coordinatesVoNew = new CoordinatesVo(infoAddForn.getLatitude(), infoAddForn.getLongitude(), totalDistance);
-            courierCoordinates.put(infoAddForn.getCourierId(), coordinatesVoNew);
+            CoordinatesVo coordinatesVoNew = new CoordinatesVo.Builder()
+            .latitude(infoAddForn.getLatitude())
+            .longitude(infoAddForn.getLongitude())
+            .totalDistance(totalDistance).build();
 
+            courierCoordinates.put(infoAddForn.getCourierId(), coordinatesVoNew);
             logger.info("Courier total distance is {}", getTotalTravelDistance(infoAddForn.getCourierId()));
         }
         else{
-            CoordinatesVo coordinatesVo = new CoordinatesVo(infoAddForn.getLatitude(), infoAddForn.getLongitude(), defaultTotalDistance);
+            CoordinatesVo coordinatesVo = new CoordinatesVo.Builder()
+                    .latitude(infoAddForn.getLatitude())
+                    .longitude(infoAddForn.getLongitude())
+                    .totalDistance(defaultTotalDistance).build();
             courierCoordinates.put(infoAddForn.getCourierId(), coordinatesVo);
         }
     }

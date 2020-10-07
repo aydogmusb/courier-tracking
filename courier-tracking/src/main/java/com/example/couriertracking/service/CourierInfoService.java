@@ -14,7 +14,7 @@ public class CourierInfoService {
 
     private static final Logger logger = LoggerFactory.getLogger(CourierInfoService.class);
     private static final Map<Long, CoordinatesVo> courierCoordinates = new HashMap<>();
-    private static final double defaultTotalDistance = Double.valueOf(0);
+    private static final Double DEFAULT_TOTAL_DISTANCE = 0.0;
 
     public void addCourierInfo(InfoAddForm infoAddForn){
         Double latitude = infoAddForn.getLatitude();
@@ -40,7 +40,7 @@ public class CourierInfoService {
             CoordinatesVo coordinatesVo = new CoordinatesVo.Builder()
                     .latitude(infoAddForn.getLatitude())
                     .longitude(infoAddForn.getLongitude())
-                    .totalDistance(defaultTotalDistance).build();
+                    .totalDistance(DEFAULT_TOTAL_DISTANCE).build();
             courierCoordinates.put(infoAddForn.getCourierId(), coordinatesVo);
         }
     }
@@ -51,7 +51,7 @@ public class CourierInfoService {
             return coordinatesVo.getTotalDistance();
         }
         else {
-            return defaultTotalDistance;
+            return DEFAULT_TOTAL_DISTANCE;
         }
     }
 }

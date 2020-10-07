@@ -31,7 +31,7 @@ public class CourierLocationCalculatorService {
         List<Store> stores = storeJsonMapperService.mapToStore();
         CourierVo courier = infoAddFormToCourierVoConverter.convertToVo(form);
 
-        stores.stream().forEach(store ->{
+        stores.forEach(store ->{
             Double latitude = store.getLatitude();
             Double longitude = store.getLongitude();
 
@@ -45,10 +45,8 @@ public class CourierLocationCalculatorService {
     }
 
     private boolean controlCourierEntranceTime(CourierVo courier, Long storeId) {
-        if(Optional.ofNullable(courier.getEntranceTime()).isPresent()){
-            if (courier.getEntranceTime().get().containsKey(storeId)){
+        if(courier.getEntranceTime().isPresent() && courier.getEntranceTime().get().containsKey(storeId)){
                 return courier.getEntranceTime().get().get(storeId).after(addCourierTime(courier.getDate()));
-            }
         }
         return false;
     }

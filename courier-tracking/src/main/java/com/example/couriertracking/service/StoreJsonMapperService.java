@@ -16,7 +16,7 @@ public class StoreJsonMapperService {
         final ObjectMapper objectMapper = new ObjectMapper();
 
         List<Store> storeList = objectMapper.readValue(
-                new File("/Users/Ezgi/Downloads/courier-tracking/courier-tracking/src/main/resources/store.json"),
+                new File("/courier-tracking/src/main/resources/store.json"),
                 new TypeReference<>() {
                 });
         return storeList;

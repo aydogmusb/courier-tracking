@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d10f2874-f8cc-47c5-b563-b80900cf4eec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/CoordinatesVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/CoordinatesVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierLocationCalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierLocationCalculatorService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/courier-tracking/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/controller/CourierTrackingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="307">
+              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierInfoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+            <state relative-caret-position="140">
+              <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/form/InfoAddForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="272">
               <caret line="19" column="50" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -53,8 +54,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierLocationCalculatorService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="293">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/StoreJsonMapperService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/CourierVo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="663">
               <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,12 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/CoordinatesVo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-              <folding>
-                <element signature="e#939#940#0" expanded="true" />
-                <element signature="e#987#988#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -118,7 +127,6 @@
         <option value="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/EntranceTimeVo.java" />
         <option value="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/CourierVo.java" />
         <option value="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/controller/CourierTrackingController.java" />
-        <option value="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierLocationCalculatorService.java" />
         <option value="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/converter/InfoAddFormToCourierVoConverter.java" />
         <option value="$PROJECT_DIR$/courier-tracking/pom.xml" />
         <option value="$PROJECT_DIR$/courier-tracking/src/test/java/com/example/couriertracking/service/CourierInfoServiceTest.java" />
@@ -127,6 +135,7 @@
         <option value="$PROJECT_DIR$/courier-tracking/src/test/java/com/example/couriertracking/converter/InfoAddFormToCourierVoConverterTest.java" />
         <option value="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/CoordinatesVo.java" />
         <option value="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierInfoService.java" />
+        <option value="$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierLocationCalculatorService.java" />
       </list>
     </option>
   </component>
@@ -149,6 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,7 +304,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -303,7 +312,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602014706272" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602014936449" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -446,7 +455,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295082" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3295082" />
@@ -486,39 +495,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/EntranceTimeVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="e#223#224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/CourierVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/controller/CourierTrackingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/EntranceTimeVo.java" />
     <entry file="file://$PROJECT_DIR$/courier-tracking/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -553,26 +530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courier-tracking/src/test/java/com/example/couriertracking/service/CourierInfoServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/StoreJsonMapperService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="111" selection-start-line="18" selection-start-column="111" selection-end-line="18" selection-end-column="111" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/courier-tracking/src/test/java/com/example/couriertracking/service/CourierInfoServiceTest.java" />
     <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/converter/InfoAddFormToCourierVoConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -585,7 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/form/InfoAddForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="272">
           <caret line="19" column="50" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -593,10 +551,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierLocationCalculatorService.java">
+    <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/controller/CourierTrackingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="307">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -605,19 +563,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/CoordinatesVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+        <state relative-caret-position="17">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/vo/CourierVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
           <folding>
-            <element signature="e#939#940#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierLocationCalculatorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/StoreJsonMapperService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/courier-tracking/src/main/java/com/example/couriertracking/service/CourierInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+        <state relative-caret-position="140">
+          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

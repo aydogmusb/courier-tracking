@@ -32,8 +32,10 @@ public class CourierLocationCalculatorServiceTest {
     private InfoAddFormToCourierVoConverter infoAddFormToCourierVoConverter;
 
     @Before
-    public void setUp(){courierLocationCalculatorService = new CourierLocationCalculatorService(storeJsonMapperService,
-            infoAddFormToCourierVoConverter);}
+    public void setUp() {
+        courierLocationCalculatorService = new CourierLocationCalculatorService(storeJsonMapperService,
+                infoAddFormToCourierVoConverter);
+    }
 
     @Test
     public void should_check_courier_coordinates() throws IOException {

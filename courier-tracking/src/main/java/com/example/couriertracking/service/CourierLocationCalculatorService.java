@@ -1,9 +1,9 @@
 package com.example.couriertracking.service;
 
 import com.example.couriertracking.converter.InfoAddFormToCourierVoConverter;
-import com.example.couriertracking.vo.CourierVo;
 import com.example.couriertracking.entity.Store;
 import com.example.couriertracking.form.InfoAddForm;
+import com.example.couriertracking.vo.CourierVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -31,27 +31,30 @@ public class CourierLocationCalculatorService {
         List<Store> stores = storeJsonMapperService.mapToStore();
         CourierVo courier = infoAddFormToCourierVoConverter.convertToVo(form);
 
-        stores.forEach(store ->{
+        stores.forEach(store -> {
             Double latitude = store.getLatitude();
             Double longitude = store.getLongitude();
 
             double distance = Math.sqrt((longitude - (courier.getLongitude()) * (longitude - (courier.getLongitude()))) + ((latitude - (courier.getLatitude())) * (latitude - (courier.getLatitude()))));
 
-            if(distance < 100 && controlCourierEntranceTime(courier, store.getId())){
+            if (distance < 100 && controlCourierEntranceTime(courier, store.getId())) {
                 updateCourierEntranceTime(courier, store.getId());
                 courierMap.put(form.getCourierId(), courier);
                 logger.info("Courier {} enter {} store at {}", courier.getId(), store.getName(), form.getTime());
-            }});
+            }
+        });
     }
 
     private boolean controlCourierEntranceTime(CourierVo courier, Long storeId) {
-        if(courier.getEntranceTime().isPresent() && courier.getEntranceTime().get().containsKey(storeId)){
-                return courier.getEntranceTime().get().get(storeId).after(addCourierTime(courier.getDate()));
+        if (Optional.ofNullable(courier.getEntranceTime()).isPresent()) {
+            if (courier.getEntranceTime().get().containsKey(storeId)) {
+                return courier.getDate().after(addCourierTime(courier.getEntranceTime().get().get(storeId)));
+            }
         }
         return false;
     }
 
-    private void updateCourierEntranceTime(CourierVo courier, Long storeId){
+    private void updateCourierEntranceTime(CourierVo courier, Long storeId) {
         Optional<Map<Long, Date>> entranceTime = courier.getEntranceTime();
         entranceTime.get().put(storeId, courier.getDate());
         courier.setEntranceTime(entranceTime);

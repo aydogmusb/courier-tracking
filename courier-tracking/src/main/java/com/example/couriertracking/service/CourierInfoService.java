@@ -16,11 +16,11 @@ public class CourierInfoService {
     private static final Map<Long, CoordinatesVo> courierCoordinates = new HashMap<>();
     private static final Double DEFAULT_TOTAL_DISTANCE = 0.0;
 
-    public void addCourierInfo(InfoAddForm infoAddForn){
+    public void addCourierInfo(InfoAddForm infoAddForn) {
         Double latitude = infoAddForn.getLatitude();
         Double longitude = infoAddForn.getLongitude();
 
-        if(courierCoordinates.containsKey(infoAddForn.getCourierId())) {
+        if (courierCoordinates.containsKey(infoAddForn.getCourierId())) {
             CoordinatesVo coordinatesVo = courierCoordinates.get(infoAddForn.getCourierId());
             Double voLatitude = coordinatesVo.getLatitude();
             Double voLongitude = coordinatesVo.getLongitude();
@@ -29,14 +29,13 @@ public class CourierInfoService {
             double totalDistance = Double.sum(distance, coordinatesVo.getTotalDistance());
 
             CoordinatesVo coordinatesVoNew = new CoordinatesVo.Builder()
-            .latitude(infoAddForn.getLatitude())
-            .longitude(infoAddForn.getLongitude())
-            .totalDistance(totalDistance).build();
+                    .latitude(infoAddForn.getLatitude())
+                    .longitude(infoAddForn.getLongitude())
+                    .totalDistance(totalDistance).build();
 
             courierCoordinates.put(infoAddForn.getCourierId(), coordinatesVoNew);
             logger.info("Courier total distance is {}", getTotalTravelDistance(infoAddForn.getCourierId()));
-        }
-        else{
+        } else {
             CoordinatesVo coordinatesVo = new CoordinatesVo.Builder()
                     .latitude(infoAddForn.getLatitude())
                     .longitude(infoAddForn.getLongitude())
@@ -45,12 +44,11 @@ public class CourierInfoService {
         }
     }
 
-    private double getTotalTravelDistance(Long courierId){
-        if(courierCoordinates.containsKey(courierId)) {
+    private double getTotalTravelDistance(Long courierId) {
+        if (courierCoordinates.containsKey(courierId)) {
             CoordinatesVo coordinatesVo = courierCoordinates.get(courierId);
             return coordinatesVo.getTotalDistance();
-        }
-        else {
+        } else {
             return DEFAULT_TOTAL_DISTANCE;
         }
     }

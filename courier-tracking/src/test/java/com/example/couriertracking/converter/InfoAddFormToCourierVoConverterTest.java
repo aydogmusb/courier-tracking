@@ -2,7 +2,6 @@ package com.example.couriertracking.converter;
 
 import com.example.couriertracking.form.InfoAddForm;
 import com.example.couriertracking.vo.CourierVo;
-import org.assertj.core.util.DateUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,10 +15,12 @@ public class InfoAddFormToCourierVoConverterTest {
     private InfoAddFormToCourierVoConverter infoAddFormToCourierVoConverter;
 
     @Before
-    public void setUp(){infoAddFormToCourierVoConverter = new InfoAddFormToCourierVoConverter();}
+    public void setUp() {
+        infoAddFormToCourierVoConverter = new InfoAddFormToCourierVoConverter();
+    }
 
     @Test
-    public void should_convert(){
+    public void should_convert() {
         //given
         InfoAddForm infoAddForm = new InfoAddForm();
         infoAddForm.setCourierId(1L);

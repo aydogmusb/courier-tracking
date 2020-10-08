@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class InfoAddFormToCourierVoConverter {
 
-    public CourierVo convertToVo(InfoAddForm form){
+    public CourierVo convertToVo(InfoAddForm form) {
         CourierVo courierVo = new CourierVo();
         courierVo.setId(form.getCourierId());
         courierVo.setDate(form.getTime());

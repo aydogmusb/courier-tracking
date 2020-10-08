@@ -22,10 +22,12 @@ public class CoordinatesVo {
             this.latitude = latitude;
             return this;
         }
+
         public Builder longitude(Double longitude) {
             this.longitude = longitude;
             return this;
         }
+
         public Builder totalDistance(double totalDistance) {
             this.totalDistance = totalDistance;
             return this;
@@ -36,7 +38,7 @@ public class CoordinatesVo {
         }
     }
 
-        private CoordinatesVo(Builder builder) {
+    private CoordinatesVo(Builder builder) {
         latitude = builder.latitude;
         longitude = builder.longitude;
         totalDistance = builder.totalDistance;

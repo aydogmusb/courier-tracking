@@ -4,6 +4,7 @@ import com.example.couriertracking.converter.InfoAddFormToCourierVoConverter;
 import com.example.couriertracking.entity.Store;
 import com.example.couriertracking.form.InfoAddForm;
 import com.example.couriertracking.vo.CourierVo;
+import org.assertj.core.util.DateUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -44,6 +45,7 @@ public class CourierLocationCalculatorServiceTest {
         infoAddForm.setCourierId(1L);
         infoAddForm.setLatitude(41.0066851);
         infoAddForm.setLongitude(23.002531);
+        infoAddForm.setTime(DateUtil.now());
 
         Store store = new Store();
         store.setId(1L);

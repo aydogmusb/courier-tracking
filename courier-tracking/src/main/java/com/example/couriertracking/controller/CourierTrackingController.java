@@ -3,15 +3,15 @@ package com.example.couriertracking.controller;
 import com.example.couriertracking.form.InfoAddForm;
 import com.example.couriertracking.service.CourierInfoService;
 import com.example.couriertracking.service.CourierLocationCalculatorService;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
 
-@Controller
+@RestController
 public class CourierTrackingController {
 
     private final CourierInfoService courierInfoService;
